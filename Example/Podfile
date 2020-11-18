@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'BaseClassSDK_Example' do
+  pod 'BaseClassSDK', :path => '../'
+
+  target 'BaseClassSDK_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
